@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>آزمون لغت</title>
+  <link rel="stylesheet" href="../css/words_quiz.css" />
+</head>
+
+<body>
+  <a href="../html/menu.html" class="back-button">
+    <img src="../icon/back.png" alt="">
+  </a>
+  <div class="card">
+    <h1>آزمون لغت</h1>
+
+    <div class="meta">
+      <div class="pill" id="counter">سؤال 0 از 0</div>
+      <div id="progressBar">
+        <div id="progressFill"></div>
+      </div>
+    </div>
+
+    <div id="question">برای شروع روی «شروع» کلیک کنید.</div>
+    <div id="options"></div>
+
+    <div class="feedback" id="feedback"></div>
+
+    <div class="controls">
+      <button class="btn secondary" id="restartBtn">شروع</button>
+      <button style="display: none;" class="btn secondary" id="finishBtn">پایان آزمون</button>
+      <div class="small" id="score">درست: 0 — اشتباه: 0</div>
+    </div>
+
+    <div id="endScreen" style="display:none;margin-top:18px"></div>
+
+    <footer class="note small">
+      <ul>
+        <li>حداکثر تعداد سؤال: <strong id="maxQ">20</strong></li>
+        <li>هر کلمه فقط یک‌بار ظاهر می‌شود.</li>
+        <li>اگر اشتباه گفتی، پاسخ درست رو نشون میده.</li>
+      </ul>
+    </footer>
+  </div>
+  <script src="../js/words_quizs.js"></script>
+  <script src="../js/words_quiz4.js"></script>
+</body>
+
+</html>

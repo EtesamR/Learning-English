@@ -1,0 +1,117 @@
+body {
+  font-family: "Vazirmatn", "IRANSans", system-ui, sans-serif;
+  padding: 20px;
+  direction: rtl;
+  background: linear-gradient(135deg, #cad6da 0%, #dfe9f3 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+form {
+  width: 100%;
+  max-width: 400px;
+  background: #ffffffcc;
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
+  padding: 40px 40px;
+  padding-left: 60px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+form:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+label {
+  display: block;
+  margin: 12px 0 6px;
+  font-weight: 600;
+  color: #181818;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 12px 14px; 
+  margin-bottom: 14px; 
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  outline: none;
+  transition: all 0.2s ease;
+  background-color: #fafafa;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #009688;
+  box-shadow: 0 0 0 3px rgba(0, 150, 136, 0.2);
+  background-color: #fff;
+}
+
+textarea {
+  resize: none;
+  min-height: 90px;
+}
+
+.button {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  background: linear-gradient(135deg, #009688, #26a69a);
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 12px 0;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background: linear-gradient(135deg, #00796b, #009688);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 150, 136, 0.3);
+}
+
+.button:active {
+  transform: scale(0.98);
+}
+
+input[type="checkbox"] {
+  width: auto;
+  margin-left: 8px;
+  accent-color: #009688;
+}
+
+pre {
+  background: #222;
+  color: #eee;
+  padding: 12px;
+  border-radius: 8px;
+  overflow: auto;
+}
+
+@media (max-width: 600px) {
+  form {
+    padding-left: 60px;
+    border-radius: 12px;
+  }
+
+  .button {
+    font-size: 0.95rem;
+  }
+}

@@ -1,0 +1,112 @@
+body {
+  font-family: "Vazirmatn", "IRANSans", system-ui, sans-serif;
+  background: #f0f4f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  min-height: 100vh;
+  direction: rtl;
+}
+
+.table-container {
+  width: 100%;
+  max-width: 800px;
+  overflow-x: auto;
+  background: #ffffffcc;
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+th {
+  background: linear-gradient(135deg, #009688, #26a69a);
+  color: #fff;
+  font-weight: 600;
+  padding: 12px 8px;
+  border-radius: 8px 8px 0 0;
+}
+
+td {
+  padding: 12px 8px;
+  border-bottom: 1px solid #cecece;
+  transition: background 0.3s ease;
+  border-left: 1px solid #cecece;
+  border-right: 1px solid #cecece;
+}
+
+tr:hover td {
+  background: rgba(0, 150, 136, 0.1);
+}
+
+tr:nth-child(even) td {
+  background: rgba(0, 0, 0, 0.03);
+}
+
+.back-button {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  z-index: 1000;
+}
+
+.back-button:hover {
+  transform: scale(1.03);
+}
+
+.back-button img {
+  width: 40px;
+  height: 40px;
+}
+
+@media (max-width: 600px) {
+
+  th,
+  td {
+    padding: 12px 5px;
+    font-size: 0.9rem;
+  }
+
+  .table-container {
+    width: 100%;
+    /* تقریبا کل عرض صفحه موبایل */
+    padding: 0;
+  }
+
+  body {
+    padding: 0;
+  }
+
+  .back-button {
+    top: 5px;
+    left: 5px;
+  }
+
+  .back-button:hover {
+    transform: scale(1.03);
+  }
+
+  .back-button img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.test {
+  border-radius: 0px;
+  background: #26a69a;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../css/menu.css">
+<title>منوی سایت</title>
+</head>
+<body>
+
+<div class="menu-container">
+  <a href="../html/words_lessons.html" class="menu-card">
+    <div class="icon">
+      <img src="../icon/icon1.png" alt="کلمات درس">
+    </div>
+    بخش کلمات درس
+  </a>
+
+  <a href="words_quiz.html" class="menu-card">
+    <div class="icon">
+      <img src="../icon/icon2.png" alt="آزمون">
+    </div>
+    بخش آزمون کلمات
+  </a>
+
+  <a href="download_pdf.html" class="menu-card">
+    <div class="icon">
+      <img src="../icon/icon3.png" alt="PDF">
+    </div>
+    دانلود PDF
+  </a>
+</div>
+
+<script>
+const cards = document.querySelectorAll('.menu-card');
+
+cards.forEach(card => {
+  card.addEventListener('touchstart', () => {
+    card.classList.add('active');
+  });
+  card.addEventListener('touchend', () => {
+    setTimeout(() => {
+      card.classList.remove('active');
+    }, 200);
+  });
+});
+</script>
+
+</body>
+</html>

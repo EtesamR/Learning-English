@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArabLearn</title>
+    <link rel="stylesheet" href="../css/login_form_style.css">
+</head>
+
+<body onload="login_or_no()">
+    <form id="contactForm">
+        <label for="name">نام :</label>
+        <input id="name" type="text" placeholder="نام خود را وارد کنید" required>
+
+        <label for="password">رمز :</label>
+        <input id="password" type="text" placeholder="رمز خود را وارد کنید" required>
+
+        <label for="age">سن :</label>
+        <input id="age" type="number" min="1" max="120">
+
+        <input class="button" type="button" value="ارسال" onclick="login_user('name','password','age')">
+    </form>
+</body>
+<script src="../js/login_or_form.js"></script>
+<script src="../js/login_script_js.js"></script>
+
+</html>
